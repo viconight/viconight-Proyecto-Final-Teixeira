@@ -1,0 +1,68 @@
+.mangaIvrea{
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    text-align: center;  
+    a{text-decoration: none;} 
+    h3{color:red;}
+    p{
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.mangaPanini{
+    @extend .mangaIvrea;
+    h3{color:blue;}
+}
+
+.merch{
+    @extend .mangaIvrea;
+    h3{color:green;}
+}
+
+.tcg{
+    @extend .mangaIvrea;
+    h3{ color:green;}
+}
+    
+.fig{
+    flex-direction: column;
+    text-align: center;
+    @include textos(darkorange ,500);
+}
+
+.subTitulo{
+    text-align: center;
+    transform: translateY(70px);
+    h2{
+        color:darkorange;
+    }
+
+    p{
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.social{
+    h3{
+        color: darkorange;
+        transform: translateY(80px)
+    }
+}
+
+main{
+    flex-wrap: wrap;
+}
+
+.fig{
+    a{
+        text-decoration: none;
+    }
+}
+
+
+#contacto a{
+    text-decoration:none;
+    color: black;
+}
